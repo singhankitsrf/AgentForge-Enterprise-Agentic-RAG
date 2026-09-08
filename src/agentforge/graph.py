@@ -14,7 +14,10 @@ def build_graph(settings: Settings):
         events = list(state.get("policy_events", []))
         if contains_injection_pattern(state["task"]):
             events.append({"type": "prompt_injection", "action": "blocked"})
-            return {"policy_events": events, "answer": "Request blocked by prompt-injection policy."}
+            return {
+                "policy_events": events,
+                "answer": "Request blocked by prompt-injection policy.",
+            }
         events.append({"type": "precheck", "action": "pass"})
         return {"policy_events": events}
 
