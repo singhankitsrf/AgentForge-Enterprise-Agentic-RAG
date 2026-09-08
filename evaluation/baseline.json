@@ -1,0 +1,31 @@
+{
+  "scope": "deterministic contract evaluation; not an LLM quality benchmark",
+  "source": {
+    "workflow_run_id": 34244486576,
+    "commit": "f82d6f3bf1b93ff833424e9cbded089689609146",
+    "executed_on": "2026-09-08"
+  },
+  "cases": 3,
+  "passed": 3,
+  "results": [
+    {
+      "id": "case-001",
+      "passed": true,
+      "evidence_recall": 1.0,
+      "approval_correct": true
+    },
+    {
+      "id": "case-002",
+      "passed": true,
+      "evidence_recall": 1.0,
+      "approval_correct": true
+    },
+    {
+      "id": "case-003",
+      "passed": true,
+      "evidence_recall": 1.0,
+      "approval_correct": true
+    }
+  ],
+  "notes": "These values validate deterministic orchestration, expected evidence coverage and approval-policy behavior only. They are not provider-backed LLM quality or production performance metrics."
+}
