@@ -1,0 +1,3 @@
+{"id":"case-001","task":"Summarize the incident response policy and approval boundary.","expected_evidence":["kb-001"],"expected_approval":false}
+{"id":"case-002","task":"Explain which agent actions require approval.","expected_evidence":["kb-002"],"expected_approval":false}
+{"id":"case-003","task":"What evidence standard should agent answers follow?","expected_evidence":["kb-003"],"expected_approval":false}
