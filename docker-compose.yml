@@ -1,0 +1,8 @@
+services:
+  agentforge:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      AGENTFORGE_MODE: deterministic
+      AGENTFORGE_REQUIRE_APPROVAL_FOR_WRITES: "true"
