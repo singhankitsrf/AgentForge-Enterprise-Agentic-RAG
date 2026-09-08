@@ -1,0 +1,53 @@
+name: Hugging Face Static Space
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - "hf_static/**"
+      - ".github/workflows/huggingface.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Smoke-test static application
+        run: |
+          python -m http.server 8000 --directory hf_static >/tmp/agentforge-static.log 2>&1 &
+          server_pid=$!
+          trap 'kill $server_pid || true' EXIT
+          for attempt in $(seq 1 20); do
+            if curl --fail --silent http://localhost:8000/index.html >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/agentforge-static.log
+          exit 1
+      - name: Install Hub dependency
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'push'
+        run: pip install huggingface_hub==1.30.0
+      - name: Publish Static Space
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'push'
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          if [ -z "$HF_TOKEN" ]; then
+            echo "HF_TOKEN is not configured in this repository; static bundle validated but publication skipped."
+            exit 0
+          fi
+          python - <<'PY'
+          import os
+          from huggingface_hub import HfApi
+          api = HfApi(token=os.environ["HF_TOKEN"])
+          repo_id = "singhankit491/agentforge-enterprise"
+          api.create_repo(repo_id=repo_id, repo_type="space", space_sdk="static", exist_ok=True, private=False)
+          api.upload_folder(repo_id=repo_id, repo_type="space", folder_path="hf_static", commit_message="Deploy AgentForge Enterprise static portfolio Space")
+          print(f"Published https://huggingface.co/spaces/{repo_id}")
+          PY
