@@ -39,7 +39,12 @@ def _tokens(text: str) -> set[str]:
     return set(re.findall(r"[a-z0-9]+", text.lower()))
 
 
-def retrieve(query: str, *, top_k: int = 3, documents: list[Document] | None = None) -> list[Evidence]:
+def retrieve(
+    query: str,
+    *,
+    top_k: int = 3,
+    documents: list[Document] | None = None,
+) -> list[Evidence]:
     docs = documents or DEFAULT_KB
     q = _tokens(query)
     ranked: list[Evidence] = []
@@ -47,6 +52,13 @@ def retrieve(query: str, *, top_k: int = 3, documents: list[Document] | None = N
         d = _tokens(f"{doc.title} {doc.text}")
         overlap = len(q & d)
         score = overlap / max(1, len(q))
-        ranked.append({"id": doc.id, "title": doc.title, "text": doc.text, "score": round(score, 4)})
+        ranked.append(
+            {
+                "id": doc.id,
+                "title": doc.title,
+                "text": doc.text,
+                "score": round(score, 4),
+            }
+        )
     ranked.sort(key=lambda item: (item["score"], item["id"]), reverse=True)
     return ranked[:top_k]
