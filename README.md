@@ -166,6 +166,12 @@ tests/              policy/retrieval/API-contract tests
 | Provider-backed LLM benchmark | Not yet claimed |
 | Production cloud deployment | Not yet claimed |
 
+## Project management
+
+- **Project charter:** [`PROJECT.md`](PROJECT.md)
+- **Live execution roadmap:** [Project Roadmap #1](https://github.com/singhankitsrf/AgentForge-Enterprise-Agentic-RAG/issues/1)
+- **Five-project portfolio index:** [`PORTFOLIO_PROJECTS.md`](PORTFOLIO_PROJECTS.md)
+
 ## Technology signal
 
 **LangGraph · LangChain · MCP · Agentic RAG · FastAPI · Pydantic · Docker · CI/CD · Evaluation · Guardrails · Human-in-the-loop · Observability · Responsible AI**
