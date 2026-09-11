@@ -1,6 +1,13 @@
-# Ankit Kumar Singh — GitHub Engineering Projects
+# Ankit Kumar Singh — AI Engineering Portfolio
 
-This index presents the five flagship repositories as managed engineering projects with explicit delivery roadmaps, evidence boundaries, risks, and next milestones.
+This index presents five flagship repositories as managed engineering projects with explicit delivery roadmaps, evidence boundaries, risks, and next milestones.
+
+**Recruiters / hiring managers:** [Start with the 10–15 minute evaluation path](https://github.com/singhankitsrf/singhankitsrf/blob/main/RECRUITER_START_HERE.md)  
+**Technical writing / Engineering Reliable AI:** [Read the publication source library](https://github.com/singhankitsrf/singhankitsrf/tree/main/writing)  
+**Hugging Face:** https://huggingface.co/singhankit491  
+**LinkedIn:** https://www.linkedin.com/in/ankit-kumar-singh-data-scientist-434404203
+
+## Flagship projects
 
 | Project | Engineering focus | Project charter | Live roadmap |
 |---|---|---|---|
@@ -23,13 +30,19 @@ This index presents the five flagship repositories as managed engineering projec
 1. Reproducible CI and deterministic checks wherever practical.
 2. Executed evidence is separated from architecture intent.
 3. Cloud, clinical, performance, cost, and reliability claims are published only when measured.
-4. Every flagship repository now has a project charter and an actionable roadmap issue.
+4. Every flagship repository has a project charter and actionable roadmap.
 5. Responsible-AI, data-governance and security boundaries are documented rather than implied.
 
 ## Recommended portfolio order
 
-1. **AgentForge Enterprise** — strongest GenAI/AI-platform signal
-2. **OtoVision MLOps** — strongest computer-vision/healthcare-AI signal
-3. **OtoSage AWS** — strongest AWS/AI-platform architecture signal
-4. **ClinRoute NLP ReleaseOps** — strongest reproducible NLP/CI-CD signal
-5. **MedLake Azure PySpark** — strongest data-platform/streaming signal
+1. **AgentForge Enterprise** — strongest GenAI / AI-platform signal
+2. **OtoVision MLOps** — strongest computer-vision / healthcare-AI signal
+3. **OtoSage AWS** — strongest AWS / AI-platform architecture signal
+4. **ClinRoute NLP ReleaseOps** — strongest reproducible NLP / CI-CD signal
+5. **MedLake Azure PySpark** — strongest data-platform / streaming signal
+
+## Thought-leadership bridge
+
+The portfolio is paired with **Engineering Reliable AI**, a technical-writing system that explains the architecture and evidence principles behind these projects. Current topics include reliable medical AI, governed agentic RAG, AI engineering evidence, AWS SageMaker model lifecycle, model-aware NLP CI/CD, and PySpark/Delta Lake healthcare platforms.
+
+[Read the technical writing index](https://github.com/singhankitsrf/singhankitsrf/blob/main/writing/README.md) · [View the Substack publication operating system](https://github.com/singhankitsrf/singhankitsrf/blob/main/substack/README.md)
