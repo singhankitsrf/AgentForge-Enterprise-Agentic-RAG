@@ -3,7 +3,7 @@
 This index presents five flagship repositories as managed engineering projects with explicit delivery roadmaps, evidence boundaries, risks, and next milestones.
 
 **Recruiters / hiring managers:** [Start with the 10–15 minute evaluation path](https://github.com/singhankitsrf/singhankitsrf/blob/main/RECRUITER_START_HERE.md)  
-**Technical writing / Engineering Reliable AI:** [Read the publication source library](https://github.com/singhankitsrf/singhankitsrf/tree/main/writing)  
+**Technical writing / Evidence-First AI Systems:** [Read the publication source library](https://github.com/singhankitsrf/singhankitsrf/tree/main/writing)  
 **Hugging Face:** https://huggingface.co/singhankit491  
 **LinkedIn:** https://www.linkedin.com/in/ankit-kumar-singh-data-scientist-434404203
 
@@ -43,6 +43,6 @@ This index presents five flagship repositories as managed engineering projects w
 
 ## Thought-leadership bridge
 
-The portfolio is paired with **Engineering Reliable AI**, a technical-writing system that explains the architecture and evidence principles behind these projects. Current topics include reliable medical AI, governed agentic RAG, AI engineering evidence, AWS SageMaker model lifecycle, model-aware NLP CI/CD, and PySpark/Delta Lake healthcare platforms.
+The portfolio is paired with **Evidence-First AI Systems**, a technical-writing system that explains the architecture and evidence principles behind these projects. Current topics include reliable medical AI, governed agentic RAG, AI engineering evidence, AWS SageMaker model lifecycle, model-aware NLP CI/CD, and PySpark/Delta Lake healthcare platforms.
 
 [Read the technical writing index](https://github.com/singhankitsrf/singhankitsrf/blob/main/writing/README.md) · [View the Substack publication operating system](https://github.com/singhankitsrf/singhankitsrf/blob/main/substack/README.md)
