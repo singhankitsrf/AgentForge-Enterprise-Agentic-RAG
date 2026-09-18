@@ -18,6 +18,12 @@ This statement records the author's implementation history. It does not by itsel
 | Deployment | A recruiter-facing Hugging Face surface is linked from the README. | Public surface; production-cloud operation is not claimed |
 | Ownership | Architecture and implementation were personally completed by Ankit Kumar Singh. | Author-confirmed |
 
+## Leadership and programme context
+
+The author reports approximately 15 years of professional experience, more than 8 years in AI/IT research and implementation, and AI Lead / Project Manager responsibility across multidisciplinary work including the Indo–Norway IReSOpM consortium supported by DST (India) and RCN (Norway). Reported team scope has included approximately 25–50 contributors.
+
+This repository is the primary proof of current AI-platform architecture capability. Its public evidence demonstrates implementation structure and deterministic controls; confidential programme records and employer references remain separate verification channels.
+
 ## Reviewer path
 
 1. Read the main README and architecture documentation.
