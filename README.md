@@ -179,3 +179,9 @@ tests/              policy/retrieval/API-contract tests
 ## License
 
 MIT
+
+## Evidence and real-world implementation
+
+Personally implemented by Ankit Kumar Singh as part of his applied AI engineering work supporting healthcare and multidisciplinary research environments, including ENT-related work at AIIMS Raipur and the Indo–Norway IReSOpM consortium supported by DST (India) and RCN (Norway).
+
+Evidence is deliberately separated into repository-verifiable artifacts and author-confirmed institutional execution. See [EVIDENCE.md](EVIDENCE.md) for the verification matrix, reviewer path and claim boundaries.
